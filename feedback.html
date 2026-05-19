@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Power Wear</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>⚡ POWER WEAR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="customer-dashboard.html#home">Home</a></li>
+                <li><a href="customer-dashboard.html#shop">Shop</a></li>
+                <li><a href="customer-dashboard.html#about">About</a></li>
+                <li><a href="customer-dashboard.html#contact">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback-page">
+        <h2>CUSTOMER FEEDBACK</h2>
+        
+        <div class="feedback-form-container">
+            <h3>Share Your Experience</h3>
+            <form id="feedbackForm">
+                <label for="fb-name">Your Name:</label>
+                <input type="text" id="fb-name" required>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating">
+                    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ Good</option>
+                    <option value="3">⭐⭐⭐ Average</option>
+                    <option value="2">⭐⭐ Poor</option>
+                    <option value="1">⭐ Terrible</option>
+                </select>
+                
+                <label for="fb-message">Your Review:</label>
+                <textarea id="fb-message" rows="4" required placeholder="Tell us about your experience..."></textarea>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+        
+        <div class="feedback-list-container">
+            <h3>What Our Customers Say</h3>
+            <div id="feedbackList" class="feedback-list">
+                <!-- Feedback will load from localStorage -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 POWER WEAR. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,550 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #1a1a2e;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header .logo h1 {
+    font-size: 1.6rem;
+    color: #ff6b35;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 12px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    color: #ff6b35;
+    text-decoration: underline;
+}
+
+/* Login */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('background.jpg') no-repeat center center/cover;
+    padding-top: 80px;
+}
+
+.login-box {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+    color: #ff6b35;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.login-box button {
+    background-color: #ff6b35;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-box button:hover {
+    background-color: #e85d2c;
+}
+
+/* Customer */
+.banner-customer {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 280px 20px;
+    margin-top: 60px;
+}
+
+.banner-customer h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner-customer p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: white;
+    color: #ff6b35;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+/* Shop */
+.shop {
+    padding: 60px 40px;
+    background-color: #f4f4f4;
+}
+
+.shop h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a1a2e;
+    margin-bottom: 40px;
+}
+
+.shop h6 {
+    font-size: 1.8rem;
+    color: #ff6b35;
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.product-card {
+    width: 220px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.product-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #ff6b35;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.buy-btn {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #ff6b35;
+}
+
+/* About */
+.about {
+    padding: 80px 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.about h2 {
+    color: #1a1a2e;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Contact */
+.contact {
+    padding: 80px 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.contact button {
+    background-color: #ff6b35;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+/* Feedback */
+.feedback-page {
+    padding: 120px 40px 60px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.feedback-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 40px;
+}
+
+.feedback-form-container {
+    max-width: 500px;
+    margin: 0 auto 50px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6b35;
+}
+
+.feedback-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-form-container input,
+.feedback-form-container textarea,
+.feedback-form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.feedback-form-container button {
+    background-color: #ff6b35;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.feedback-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback-list-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+.feedback-list {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.review-item {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #ff6b35;
+}
+
+.review-item strong {
+    color: #ff6b35;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review-item .rating {
+    color: #ffc107;
+    margin-bottom: 8px;
+}
+
+.delete-feedback {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete-feedback:hover {
+    background-color: #c82333;
+}
+
+/* Admin Dashboard */
+.admin-shop {
+    padding: 100px 40px 60px;
+    background-color: #f4f4f4;
+}
+
+.admin-shop h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 40px;
+}
+
+.admin-section {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.add-product h3, .product-list h3 {
+    color: #ff6b35;
+    margin-bottom: 20px;
+}
+
+.add-product input, .add-product select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.add-product input[type="file"] {
+    padding: 8px;
+}
+
+.add-product button {
+    background-color: #ff6b35;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product-list {
+    margin-top: 40px;
+}
+
+.admin-product-item {
+    background: #f4f4f4;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.admin-product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.admin-product-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #ff6b35;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    header .logo h1 {
+        font-size: 1rem;
+    }
+    
+    header nav ul li a {
+        font-size: 0.8rem;
+    }
+    
+    header {
+        padding: 10px 15px;
+    }
+    
+    .banner-customer {
+        padding: 120px 15px;
+    }
+    
+    .banner-customer h2 {
+        font-size: 1.8rem;
+    }
+    
+    .shop {
+        padding: 40px 15px;
+    }
+    
+    .product-card {
+        width: 160px;
+    }
+    
+    .product-img {
+        height: 140px;
+    }
+    
+    .about, .contact {
+        padding: 50px 20px;
+    }
+    
+    .login-box {
+        width: 90%;
+        padding: 30px;
+    }
+    
+    .admin-shop {
+        padding: 80px 15px 40px;
+    }
+    
+    .feedback-page {
+        padding: 100px 20px 40px;
+    }
+}
