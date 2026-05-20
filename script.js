@@ -65,7 +65,7 @@ function createProductCard(product) {
     card.innerHTML = `
         <img src="${product.image}" alt="${product.name}" class="product-img" onerror="this.src='https://via.placeholder.com/200x180?text=No+Image'">
         <h3>${product.name}</h3>
-        <p>$${product.price}</p>
+        <p>BWP${product.price}</p>
         <button class="buy-btn" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
     `;
     
